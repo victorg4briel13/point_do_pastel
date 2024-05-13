@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Point do pastel</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
         <img src="./imagens/logo.png" class="logo">
         <h1>Point do pastel</h1>
-        <h3>O melhor pastel de Capoeiruçu</h3>
+        <h3>O melhor lanche de Capoeiruçu</h3>
     </header>
 
     <main>
@@ -34,15 +35,46 @@
 
         <section class="itens">
             <div class="container">
+                
                 <article class="item">
                     <div class="div_item">
-                        <img src="./imagens/img.png" class="icoComida">
+                        <img src="./imagens/pastel.png" class="icoComida">
                         <div class="descricao">
-                            <h3 class="nomeItem">Nome do item</h3>
-                            <p class="descricaoItem">Lorem ipsum dolor sit amet. Est recusandae voluptatem ut unde delectus aut officia exercitationem. Aut esse voluptatum ut necessitatibus illum aut nobis.</p>
+                            <h3 class="nomeItem">Pastel</h3>
+                            <p class="descricaoItem">Sabores: carne, frango, queijo e muito mais!</p>
                             <div class="barraPreço">
                                 <div class="divPreco">
-                                    <p class="preco">R$ 00,00</p>
+                                    <p class="preco">A partir de R$ 7,00</p>
+                                </div>
+                                <button class="button" id="menuPopUp">botão</button>
+                            </div>  
+                        </div>
+                    </div>
+                </article>
+
+                <dialog id="Sabores">
+                    <h3 class="dialog">Escolha os sabores</h3>
+                    <div class="listaSabores">
+                        
+                        <div class="sabor">
+                            <div class="diaDivSabor">
+                                <p class="nomeSabor">Sabor</p>
+                            </div>
+                            <img src="./icones/btnCarrinho.svg" class="btnCarrinho" onclick="menuPopUp()">
+                        </div>
+                        
+                    </div>
+                </dialog>
+
+                <article class="item">
+                    <div class="div_item">
+                        <img src="./imagens/tapioca.jpg" class="icoComida">
+                        <div class="descricao">
+                            <h3 class="nomeItem">Tapioca</h3>
+                            <p class="descricaoItem">Mais de 20 Sabores😋</p>
+                            <div class="barraPreço">
+                                <div class="divPreco">
+                                    <p class="preco">A partir de R$ 7,00</p>
                                 </div>
                                 <img src="./icones/btnCarrinho.svg" class="btnCarrinho">
                             </div>  
@@ -51,13 +83,13 @@
                 </article>
                 <article class="item">
                     <div class="div_item">
-                        <img src="./imagens/img.png" class="icoComida">
+                        <img src="./imagens/cuscuz.jpg" class="icoComida">
                         <div class="descricao">
-                            <h3 class="nomeItem">Nome do item</h3>
-                            <p class="descricaoItem">Descrição do item</p>
+                            <h3 class="nomeItem">Cuscuz pequeno</h3>
+                            <p class="descricaoItem">Escolha seu sabor e tempero</p>
                             <div class="barraPreço">
                                 <div class="divPreco">
-                                    <p class="preco">R$ 00,00</p>
+                                    <p class="preco">R$ 8,50</p>
                                 </div>
                                 <img src="./icones/btnCarrinho.svg" class="btnCarrinho">
                             </div>  
@@ -66,28 +98,13 @@
                 </article>
                 <article class="item">
                     <div class="div_item">
-                        <img src="./imagens/img.png" class="icoComida">
+                        <img src="./imagens/cuscuz.jpg" class="icoComida">
                         <div class="descricao">
-                            <h3 class="nomeItem">Nome do item</h3>
-                            <p class="descricaoItem">Descrição do item</p>
+                            <h3 class="nomeItem">Cuscuz grande</h3>
+                            <p class="descricaoItem">Escolha seu sabor e tempero</p>
                             <div class="barraPreço">
                                 <div class="divPreco">
-                                    <p class="preco">R$ 00,00</p>
-                                </div>
-                                <img src="./icones/btnCarrinho.svg" class="btnCarrinho">
-                            </div>  
-                        </div>
-                    </div>
-                </article>
-                <article class="item">
-                    <div class="div_item">
-                        <img src="./imagens/img.png" class="icoComida">
-                        <div class="descricao">
-                            <h3 class="nomeItem">Nome do item</h3>
-                            <p class="descricaoItem">Descrição do item</p>
-                            <div class="barraPreço">
-                                <div class="divPreco">
-                                    <p class="preco">R$ 00,00</p>
+                                    <p class="preco">R$ 10,50</p>
                                 </div>
                                 <img src="./icones/btnCarrinho.svg" class="btnCarrinho">
                             </div>  
